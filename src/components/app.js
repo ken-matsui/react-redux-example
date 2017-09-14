@@ -1,13 +1,14 @@
 import React from 'react';
+import Buttons from './buttons';
+import Num from './num';
 
 export default class App extends React.Component {
-  render() {
-    return (
-        <div>
-          <span className="text">{this.props.fuga}</span><br/>
-          <button className="square_btn plus" onClick={ () => this.props.handleClick("PLUS") }>プラス</button>
-          <button className="square_btn minus" onClick={ () => this.props.handleClick("MINUS") }>マイナス</button>
-        </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<Num num={ this.props.count } />
+				<Buttons plusClick={ () => this.props.plusClick() } minusClick={ () => this.props.minusClick() } />
+			</div>
+		);
+	}
 }
