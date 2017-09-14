@@ -10,8 +10,8 @@ import './index.css'
 const STORE = configureStore();
 
 ReactDOM.render(
-  <Provider store={STORE}>
-    <App />
-  </Provider>,
-  document.getElementById('root') // 流しこむ対象の要素
+	<Provider store={STORE}>
+		<App />
+	</Provider>,
+	document.getElementById('root') // 流しこむ対象の要素
 );
