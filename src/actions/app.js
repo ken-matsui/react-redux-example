@@ -1,7 +1,13 @@
-export function increment() {
-	return { type: 'INCREMENT' }
+export function increment(count_) {
+	return {
+		type: 'INCREMENT',
+		count: count_
+	}
 }
 
-export function decrement() {
-	return { type: 'DECREMENT' }
+export function decrement(count_) {
+	return {
+		type: 'DECREMENT',
+		count: count_
+	}
 }

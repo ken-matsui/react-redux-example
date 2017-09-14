@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store';
-import App from './containers/app'; // componentsの方ではないことに注意
+import App from './containers/app';
 
 // このcssはcomponentsに適用できる．
 import './index.css'

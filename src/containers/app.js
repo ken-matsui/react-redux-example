@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import App from '../components/app'
 import { increment, decrement } from '../actions/app'
 
-// グローバルなstateから必要な値をとってきて、コンポーネントのthis.propsとしてセット
 // 今回はいずれにしろstateのプロパティには{count}しか無いため、stateをまるごと返す
 function mapStateToProps(state_) {
 	return state_
@@ -12,8 +11,8 @@ function mapStateToProps(state_) {
 // clickでactionを飛ばす(そのまま値を流す)
 function mapDispatchToProps(dispatch_) {
 	return {
-		plusClick: () => { dispatch_(increment()) },
-		minusClick: () => { dispatch_(decrement()) },
+		plusClick: (count_) => { dispatch_(increment(count_)) },
+		minusClick: (count_) => { dispatch_(decrement(count_)) },
 	}
 }
 

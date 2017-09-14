@@ -7,7 +7,7 @@ export default class App extends React.Component {
 		return (
 			<div>
 				<Num num={ this.props.count } />
-				<Buttons plusClick={ () => this.props.plusClick() } minusClick={ () => this.props.minusClick() } />
+				<Buttons plusClick={ () => this.props.plusClick(1) } minusClick={ () => this.props.minusClick(1) } />
 			</div>
 		);
 	}
